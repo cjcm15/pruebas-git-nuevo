@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+
+<script type="text/javascript" src="../jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+   // Muestra y oculta los menús
+   $('ul li:has(ul)').hover(
+      function(e)
+      {
+         $(this).find('ul').css({display: "block"});
+      },
+      function(e)
+      {
+         $(this).find('ul').css({display: "none"});
+      }
+   );
+});
+</script>
+
+<style type="text/css">
+#navMenu {
+	margin: 0 auto;
+	width: 770px;
+	padding: 0;
+}
+#navMenu ul {
+	margin: 0;
+	padding: 0;
+	line-height: 30px;
+}
+#navMenu li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	position: relative;
+	background: #999;
+}
+#navMenu ul li a {
+	text-align: center;
+	font-family: "Comic Sans MS", cursive;
+	text-decoration: none;
+	height: 30px;
+	width: 150px;
+	display: block;
+	color: #FFF;
+	border: 1px solid #FFF;
+	text-shadow: 1px 1px 1px #000;
+}
+#navMenu ul ul {
+	position: absolute;
+	visibility: hidden;
+	top: 32px;
+}
+
+#navMenu ul li:hover ul {
+  visibility: visible;
+}
+
+ul li ul {
+   /* Resto de estilos... */
+   display: none;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Menú desplegable con jQuery en 5 minutos</h1>
+<div id="navMenu">
+<ul>
+   <li><a href="#">Inicio</a>
+      <ul>
+         <li><a href="#">¿Qué es jQuery?</a></li>
+         <li><a href="#">¿Por qué debería usarlo?</a></li>
+         <li><a href="#">¿Otro elementos de lista?</a></li>
+      </ul>
+   </li>
+   <li><a href="#">Ejemplos</a>
+      <ul>
+         <li><a href="#">Menú desplegable</a></li>
+         <li><a href="#">Fade-in, fade-out</a></li>
+      </ul>
+   </li>
+   <li><a href="#">Contacto</a></li>
+</ul>
+</div>
+
+</body>
+</html>

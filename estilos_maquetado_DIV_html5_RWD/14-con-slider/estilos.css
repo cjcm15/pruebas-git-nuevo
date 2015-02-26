@@ -1,0 +1,434 @@
+@charset="utf-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	max-width: 400px;
+}
+/*Personalizar tabla para ver los bordes*/
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 2px solid #000;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	border-collapse: collapse;  /*muesra una sola linea*/
+	/*border-collapse: separate;*/ /*muesrra doble linea*/
+	border-spacing: 1px; /*separacion entre las lineas*/
+ *border-spacing: 0px; /*IE 8*/
+}
+td {
+	padding: 2px;
+}
+strong, b, strong *, b * {
+	font-weight: bold;
+}
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+*zoom: 1;
+}
+
+
+h1{
+
+	font-size: 30px;
+}
+
+img, video {
+	vertical-align: middle; /*elimina borde inferior en la imagen*/
+}
+
+/* para sitios RWD*/
+
+img, video {
+	max-width: 100%; /*para que las imagenes y los videos se ajusten auto al tamaño de la pantalla*/
+}
+
+
+/*ESTRUCTURA*/
+
+/*html, body {
+	height: 100%;
+}*/
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	background-color: #FF9
+}
+#container-cm {
+	/*min-height: 100%;*/
+	width: 100%;
+	min-width: 965px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(img/columnas.jpg); /*colores de las columnas izq. y der. y del centro*/
+	background-repeat: repeat-y;
+	position: relative;
+	background-position: center;
+	/*position: relative;*/
+}
+
+#container-cm-interna {
+	min-height: 100%;
+	width: 100%;
+	min-width: 965px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(img/columnas-interna.jpg); /*colores de las columnas izq. y der*/
+	background-repeat: repeat-y;
+	position: relative;
+	background-position: center;
+}
+#menu-movil {
+	background-color: #FF3;
+	height: auto;
+	width: 100%;
+}
+#cabecera { /*extension de la cabecera abarcando el ancho total de la pantalla*/
+	background-color: #30B41D;
+	padding-bottom: 0px;
+	height: 100px;
+}
+#cabecera-centrar { /*es la cabecera */
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 0px;
+	height: 100px;
+	
+}
+#menu-escritorio {
+	width: 100%;
+	height: auto;
+	background-color: red;
+	                    /*zzzzzzzzzzzzzzzzzzzzzzzzzzz*/
+}
+
+#contenedor, #seccion {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+#suplemento-contenedor-inferior {
+	clear: both;
+	background-color: transparent;
+	float: none;
+	height: 49px; /*Ajustar para que las columnas no se metan debajo del #contenedor-inferior*/
+	max-width: 900px;
+}
+#contenedor-inferior {
+	width: 100%;
+	height: 50px; /*misma altura que suplemento-contenedor-inferior */
+	background-color: #F63;
+	display: block;
+	position: absolute;
+	bottom: 44px; /*igual a la altura del pie menos 1px*/
+	
+}
+#contenedor-inferior-centrado {
+	width: 100%px;
+	height: 50px;
+	background-color: #F63;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	display: block;
+}
+
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+#suplemento-pie {
+	clear: both;
+	float: none;
+	height: 45px;
+	max-width: 965px;
+}
+#pie {
+	position: absolute;
+	width: 100%;
+	height: 45px; /*suplemento_pie tiene que tener esta misma altura, para evitar que el pie tape el contenido de las columnas*/
+	bottom: -1px;
+	left: 0px;
+	/*padding-top: 10px;*//*esto es lo que ajusta la altura del footer, junto con la altura del texto en caso de que el pie contenga solo texto*/
+	/*padding-bottom: 10px;*//*esto es lo que ajusta la altura del footer, junto con la altura del texto en caso de que el pie contenga solo texto*/
+	background-color: #77EA8C;
+	text-align: center;
+}
+#pie-centrado {
+	max-width: 965px;
+	height: 45px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*ESTRUCTURA FIN*/
+
+#seccion-index{
+	margin: 0 auto;
+	width: 100%;
+	background: #4A94A4;
+}
+
+#columna-izquierda {
+	
+	float: left;
+	max-width: 200px;
+
+}
+#columna-central {
+
+	float: left;
+	max-width: 560px;
+	
+}
+#columna-derecha {
+	float: right;
+	max-width: 180px;
+	
+}
+
+/*interna*/
+
+#seccion-interna {
+	height: 100%;
+	max-width: 700px;
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	background: #E74C3C;
+}
+
+#articulo-izquierda {
+	float: left;
+	max-width: 300px;
+	background: #ECF0F1;
+}
+
+#articulo-derecha {
+	float: left;;
+	max-width: 300px;
+	background: #3498DB;
+
+}
+
+#lateral{
+	float: left;
+max-width: 365px;
+background: #2980B9;
+
+}
+
+.redondeado {
+	max-width: 250px;
+	display: block;
+	color: #0033FF;
+	text-shadow: 5px 5px 5px #CCCCCC;
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	border: 3px solid #FF0000;
+	border-radius: 10px;
+	background-color: #F99;
+	-webkit-box-shadow: 5px 5px 5px #999999;
+	box-shadow: 5px 5px 5px #999999;
+	padding: 5px;
+}
+
+.imagen-col-central {
+	float: none;
+	width: 80%;
+	margin: 20px auto;
+}
+
+@media(max-width: 765px) { /*MOVIL verdadero cuando el ancho es menor que 765 pv*/
+	#container-cm {
+	/*min-height: 100%;*/
+	max-width: 965px;
+	width: 100%;
+	min-width: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(img/); /*colores de las columnas izq. y der. y del centro
+	background-repeat: repeat-y;
+	position: relative;
+	background-position: center;
+	/*position: relative;*/
+}
+
+#menu-escritorio {
+	display: none;                           /*zzzzzzzzzzzzzzzzzzzzzzzzzzz*/
+}
+	
+#columna-izquierda {
+		padding-top: 20px;
+	padding-bottom: 20px;
+	width: 50%;
+	text-align: center;
+background: #00FF99;
+float: left;
+
+}
+#columna-central {
+		padding-top: 20px;
+	padding-bottom: 20px;
+	
+	width: 50%;
+	text-align: center;
+	background: #01FFFF;
+	float: left;
+	
+}
+#columna-derecha {
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: #3399FE;
+	float: none;
+	clear: both;
+	width: 100%;
+	text-align: center;
+}
+
+.imagen-col-central {
+	width: 90%;
+}
+	
+}
+
+
+@media(max-width: 480px) { /*MOVIL verdadero cuando el ancho es menor que 480 pv*/
+	
+
+#columna-izquierda {
+		padding-top: 20px;
+	padding-bottom: 20px;
+	width: 100%;
+	text-align: center;
+background: #00FF99;
+float: none;
+clear: both;
+}
+#columna-central {
+		padding-top: 20px;
+	padding-bottom: 20px;
+	
+	width: 100%;
+	text-align: center;
+	background: #01FFFF;
+	float: none;clear: both;
+}
+#columna-derecha {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: #3399FE;
+	float: none;
+	clear: both;
+	width: 100%;
+	text-align: center;
+}
+
+}
+
+
+@media(min-width: 766px) { /* ESCRITORIO verdadero cuando el ancho es mayor que 766 px*/
+html, body {
+	height: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	background-color: #FF9
+}
+#container-cm {
+	min-height: 100%;
+	width: 100%;
+	min-width: 965px;
+	margin-left: auto;
+	margin-right: auto;
+	/*background-image: url(img/columnas.jpg); colores de las columnas izq. y der. y del centro
+	background-repeat: repeat-y;
+	position: relative;
+	background-position: center;
+	position: relative;*/
+}
+#menu-movil {			/*Oculta el menu para movil*/
+  display: none;
+}
+
+#cabecera-centrar { /*es la cabecera */
+	max-width: 965px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 0px;
+	height: 100px;
+}
+	#menu-escritorio {
+	display: block;      /*muestra el menu horizontal para escritorio*/                    					                         /*zzzzzzzzzzzzzzzzzzzzzzzzzzz*/
+}
+
+#contenedor, #seccion {
+	height: 100%;
+	max-width: 965px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+#seccion-index{
+	max-width: 965px;
+	background: #4A94A4;
+}
+#contenedor-inferior-centrado {
+	max-width: 965px;
+	height: 50px;
+	background-color: #F63;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	display: block;
+}
+	
+}
+

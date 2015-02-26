@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Index Xima</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/normalize.min.css">
+<link rel="stylesheet" href="css/main.css">
+<link href="menu-horizontal/estilos-menu-horizontal.css" rel="stylesheet" type="text/css">
+<link href="menu-movil/estilos-menu-movil.css" rel="stylesheet" type="text/css">
+<link href="estilos.css" rel="stylesheet" type="text/css" />
+<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+
+</head>
+<body>
+<div id="container" class="clearfix">
+<!--menu movil-->
+<div id="menu-movil-contenedor"> 
+  
+  <script type="text/javascript">
+        $(document).on("ready",function (){
+		$("#descripcion").addClass("ocultar");
+	   	$(".mostrar-ocultar").click( function(){
+		$("ul li ul").css({display:"none"}); //si hay algun menu abierto lo cierra
+		$("#descripcion").toggle("slow");
+            return false;
+        });
+		$("ul li:has(ul)").on("click",function(){ 
+	    $("ul li ul").css({display:"none"}); //si hay algun menu abierto lo cierra
+	    $(this).find('ul').css({display:"block"}); //abre el menu seleccionado
+        });
+});
+    </script>
+    <div class="img-mostrar-ocultar">
+    
+  <img src="menu-movil/boton-menu-movil.png" class="mostrar-ocultar">
+    </div>
+  </div>
+  <!--menu movil-->
+  <div id="descripcion">
+<ul>
+<li><a href="#">Home</a></li>
+  <li><a href="#">Interna</a>
+    <ul>
+      <li><a href="interna.html">Interna</a></li>
+      <li><a href="#">Quienes Somos 1</a></li>
+      <li><a href="#">Quienes Somos 2</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Servicios</a>
+    <ul>
+      <li><a href="#">Servicios 1 </a></li>
+      <li><a href="#">Servicios 2</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Beneficios</a>
+    <!--<ul>
+      <li><a href="#">Menú desplegable</a></li>
+      <li><a href="#">Fade-in, fade-out</a></li>
+    </ul>-->
+  </li>
+  <li><a href="#">Galería de Fotos</a></li>
+  <li><a href="#">Contacto</a></li>
+</ul>
+  </div>
+ <!--menu movil FIN-->
+ 
+<header id="cabecera" class="clearfix">
+    <div id="cabecera-centrar" class="clearfix">
+      <div id="logo-xima">
+      <img src="img/xima-logo.jpg">
+      </div>
+      <div class="facebook"><img src="img/facebook.jpg" width="32" height="32"  alt=""/></div>
+      <div class="lkdin"><img src="img/in.jpg" width="32" height="32"  alt=""/></div>
+      <div id="menu-superior">
+      <a href="interna.html">CONTACTO</a> |
+       <a href="#">GALERIA DE FOTOS</a> |
+        <a href="#">HOME</a>
+        </div>
+   </div>
+  </header>
+ 									<!--menu horizontal-->
+  <div id="menu">
+    <div id="menu-centrar"  class="clearfix">
+<script type="text/javascript">
+	$(document).ready(function() {
+   			// Muestra y oculta los menús
+   			$('ul li:has(ul)').click(
+			  function(e)
+			  {
+				 $(this).find('ul').css({display: "block"});
+			  },
+			  function(e)
+			  {
+				 $(this).find('ul').css({display: "none"});
+			  }
+   			);
+		});
+</script>
+	  <!--menu horizontal-->
+    <link href="estilos-menu.css" rel="stylesheet" type="text/css">
+  
+
+<nav id="navMenu">
+<ul>
+   <li><a href="#">Interna</a>
+      <ul>
+         <li><a href="interna.html">Interna</a></li>
+         <li><a href="#">¿Por qué debería usarlo?</a></li>
+         <li><a href="#">¿Otro elementos de lista?</a></li>
+      </ul>
+   </li>
+   <li><a href="#">Servicios</a>
+      <ul>
+         <li><a href="#">Menú desplegable</a></li>
+         <li><a href="#">Fade-in, fade-out</a></li>
+      </ul>
+   </li>
+      <li><a href="#">Beneficios</a>
+      <ul>
+         <li><a href="#">XXXX</a></li>
+         <li><a href="#">WWWWW</a></li>
+      </ul>
+   </li>
+   <li><a href="#">Forma de Trabajo</a></li>
+   <li><a href="#">Ambitos de Actuación</a></li>
+</ul>
+</nav>
+</div>
+  </div>
+  								<!--menu horizontal FIN-->
+  <p>&nbsp;</p>
+
+  <section id="seccion">
+  
+    <h2>Las secciones deberían contener un titulo.</h2>
+      <h3>En las secciones se usan las etiquetas h2 a h6 <br>
+
+        
+        La etiqueta h1 solo se usan dentro del header </h3>
+  </section>
+  
+  
+
+  <div id="suplemento-pie" class="clearfix">&nbsp;</div>
+  <div id="pie">
+  	<footer id="pie-centrado">
+  	  	<div class="direccion">
+                <h1>Xima - Servicio Seguro</h1>
+                Urquiza 910<br>
+                San Jorge - Santa Fe<br>
+                (03406) 408 453<br>
+                (03406)156 48081
+		        
+  	  	</div>
+  	  <div id="quienes-pie" class="clearfix">
+  	  	
+        
+        
+        
+  	  	<div class="quines-somos">
+                <h2>- Quienes Somos<br>
+                - Servicios<br>
+                - Beneficios<br>
+                - Forma de Trabajo<br>
+                - Ambitos de Actuación
+                </h2>
+  	  </div>
+      	<div class="quines-somos-1">
+                <h2>- Detección de Fraudes<br>
+                - Liquidación de Siniestros<br>
+                - Transacciones ventajosas<br>
+                - Contacto
+          </h2>
+      	</div>
+        
+  <p>&nbsp;</p>
+        
+	 <div class="facebook-pie"><img src="img/facebook.jpg" width="32" height="32"  alt=""/></div>
+      <div class="lkdin-pie"><img src="img/in.jpg" width="32" height="32"  alt=""/></div>
+     </div>
+     </footer>
+  </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+

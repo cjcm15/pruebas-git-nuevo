@@ -1,0 +1,178 @@
+/* CSS Document */
+@charset "utf-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 400px;
+}
+/*Personalizar tabla para ver los bordes*/
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 1px solid #666;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	border-collapse: separate;
+	/*border-collapse: collapse;  muesra una sola linea*/
+	/*border-collapse: separate;*/ /*muesrra doble linea*/
+	border-spacing: 1px; /*separacion entre las lineas*/
+ *border-spacing: 0px; /*IE 8*/
+}
+td {
+	padding: 2px;
+}
+strong, b, strong *, b * {
+	font-weight: bold;
+}
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+*zoom: 1;
+}
+h1 {
+	font-size: 30px;
+}
+img, video {
+	vertical-align: middle; /*elimina borde inferior en la imagen*/
+}
+a{
+	text-decoration:none;
+	display: inline-block;
+}
+
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+.ocultar {
+	display: none;
+}
+#menu-movil-contenedor {
+	background-color: #000;
+	width: 100%;
+	height: 50px;
+	
+	
+}
+.mostrar-ocultar{cursor: pointer;}
+.boton {
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+#descripcion {
+/*	background-color: #FFF;
+	margin-left: 0px;
+	margin-top: 0px;
+	width: 100%;*/
+	border-bottom: #F00 thin solid;
+}
+/*#descripcion ul {
+	background-color: #000;
+	list-style: none;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+}
+#descripcion li {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	width: 100%;
+	text-align: center;
+	background-color: #000;
+	border-top-color: #FFFFFF;
+	/*border-bottom-color: #FFFFFF;
+	border-top-style: solid;
+	/*border-bottom-style: solid;
+	border-width: 2px;
+}
+#descripcion li a {
+	color: #FFF;
+	text-decoration: none;
+}
+#descripcion li a:hover {
+	color: #CF0;
+}*/
+.img-mostrar-ocultar {
+	float: right;
+	height: 30px;
+	width: 30px;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+
+
+/*WWWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+ul {
+	width: 100%;
+	text-align: center;
+	background: #FF0;
+}
+ul li {
+	padding-top: 5px;
+	list-style-image: none;
+	list-style-type: none;
+	margin: 0 auto;
+	border-top: #F00 thin solid;
+}
+ul li:first-child {
+	padding-top: 5px;
+	margin: 0;
+	border-top: #F00 thin solid;
+}
+ul li:last-child {
+	padding-bottom: 5px;
+}
+ul li a {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+ul li ul {
+	display: none;
+	list-style-image: none;
+	list-style-type: none;
+	background: #6FF;
+}
+ul li ul li {
+	padding-bottom: 0px;
+}

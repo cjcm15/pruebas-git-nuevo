@@ -1,0 +1,471 @@
+@charset="utf-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 400px;
+}
+/*Personalizar tabla para ver los bordes*/
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 2px solid #000;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	border-collapse: collapse;  /*muesra una sola linea*/
+	/*border-collapse: separate;*/ /*muesrra doble linea*/
+	border-spacing: 1px; /*separacion entre las lineas*/
+ *border-spacing: 0px; /*IE 8*/
+}
+td {
+	padding: 2px;
+}
+strong, b, strong *, b * {
+	font-weight: bold;
+}
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+*zoom: 1;
+}
+h1 {
+	font-size: 30px;
+}
+img, video {
+	vertical-align: middle; /*elimina borde inferior en la imagen*/
+	max-width: 100%;
+}
+/*ESTRUCTURA*/
+
+
+#container {
+	min-height: 100%;
+	width: 100%;
+	min-width: 965px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+#container-interna {
+	min-height: 100%;
+	width: 100%;
+	min-width: 965px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+#menu-movil {
+	display: none;
+}
+#cabecera { /*extension de la cabecera abarcando el ancho total de la pantalla*/
+	background: #FFF;
+	padding-bottom: 0px;
+	height: 110px;
+}
+#cabecera-centrar { /*es la cabecera */
+	width: 965px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 0px;
+	height: 110px;
+}
+/*cabecera*/
+#logo-xima {
+	float: left;
+	height: 88px;
+	width: 215px;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+.facebook, .lkdin {
+	float: left;
+	height: 32px;
+	width: 32px;
+	margin-top: 10px;
+	margin-left: 600px;
+}
+.lkdin {
+	margin-left: 20px;
+}
+#menu-superior {
+	font-family: "Arial Narrow";
+	font-size: 12px;
+	font-weight: lighter;
+	float: left;
+	height: 20px;
+	width: 250px;
+	margin-top: 35px;
+	margin-left: 450px;
+}
+#menu-superior a {
+	color: #000;
+}
+#menu-superior a:hover {
+	color: #F00;
+}
+#menu {
+	width: 100%;
+	background-color: #890B4D;
+	display: none;
+}
+#menu-centrar {
+	margin: auto;
+	width: 850px;
+	padding-left: 20px; /* suma 815 + 150 = 965*/
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	background: #890B4D;
+}
+.ocultar {
+	display: none;
+}
+#contenedor, #seccion {
+	height: 100%;
+	width: 965px;
+	margin: 0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+#contenedor-interna {
+	height: 100%;
+	width: 965px;
+	margin: 0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+#suplemento-pie {
+	clear: both;
+	float: none;
+	height: 180px;
+	width: 965px;
+}
+#pie {
+	position: absolute;
+	width: 100%;
+	height: 145px; /*suplemento_pie tiene que tener una altura mayor que esta, para evitar que el pie tape el contenido de las columnas*/
+	bottom: -1px;
+	left: 0px;
+	/*padding-top: 10px;*//*esto es lo que ajusta la altura del footer, junto con la altura del texto en caso de que el pie contenga solo texto*/
+	/*padding-bottom: 10px;*//*esto es lo que ajusta la altura del footer, junto con la altura del texto en caso de que el pie contenga solo texto*/
+	background-color: #890B4D;
+	text-align: left;
+}
+#pie-centrado {
+	width: 965px;
+	height: 145px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.direccion h1{
+	font-size: 12px;
+	font-weight: bold;
+}
+.direccion {
+	font-family: Arial, sans-serif;
+	font-size: 10px;
+	color: #FFF;
+	float: left;
+	height: 92px;
+	width: 157px;
+	margin-top: 25px;
+	margin-left: 40px;
+	line-height: 18px;
+	font-weight: lighter;
+}
+.quines-somos, .quines-somos-1 {
+	font-family: Arial, sans-serif;
+	font-size: 10px;
+	color: #FFF;
+	float: left;
+	height: 70px;
+	width: 140px;
+	margin-top: 25px;
+	margin-left: 220px;
+	font-weight: lighter;
+	line-height: 18px;
+}
+.quines-somos-1 {
+	margin-left: 40px;
+}
+.facebook-pie, .lkdin-pie {
+	float: left;
+	height: 32px;
+	width: 32px;
+	margin-top: 25px;
+	margin-left: 100px;
+}
+.lkdin-pie {
+	margin-left: 20px;
+}
+#menu-movil-contenedor {
+	display: block;
+}
+
+/*ESTRUCTURA FIN*/
+
+/*index index index index index index index index index index index index index index */
+
+#seccion {
+	width: 965px;
+	padding: 30px;
+}
+
+#seccion h2 {
+	font-size: 20px;
+	color: #03C;
+}
+
+#seccion h3{
+	font-size: 15px;
+	color: #C30;
+}
+
+@media(max-width: 765px) {  /*EJECUTA cuando la pantalla es menor a 765. Para evitar una transicion cuando se reduce el tamaño de la pantalla*/
+#container {
+	min-width: 0px;
+}
+#cabecera-centrar, #menu, #menu-horizontal, #contenedor, #contenedor-interna, #seccion, #suplemento-contenedor-inferior, #contenedor-inferior-centrado, #suplemento-pie, #pie-centrado, #seccion-index, #seccion-interna {
+	width: 100%;
+}
+#logo-xima {
+	width: 30%;
+	margin-top: 40px;
+	margin-left: 40px;
+}
+.facebook {
+	float: left;
+	height: 32px;
+	width: 32px;
+	margin-top: 10px;
+	margin-left: 45%;
+}
+#menu-superior {
+	margin-left: 60%;
+	background: #CF0;
+	display: none;
+}
+#menu-superior a {
+	color: #000;
+}
+#menu-superior a:hover {
+	color: #F00;
+}
+#falso-menu {
+	background-color: #3F9;
+	height: 20px;
+	width: 100%;
+}
+/*fin estructra tablet fin estructra tablet fin estructra tablet fin estructra tablet*/
+/* index tablet index tablet index tablet index tablet index tablet index tablet index tablet */
+#seccion-index {
+	width: 100%;/*background: #4A94A4;*/
+}
+
+.direccion {
+	width: 20%;
+	margin-left: 5%;
+	margin-top: 10px;
+}
+.quines-somos, .quines-somos-1 {
+	width: 20%;
+	margin-left: 7%;
+	margin-top: 10px;
+}
+.quines-somos-1 {
+	margin-left: 3%;
+	width: 25%;
+}
+.facebook-pie, .lkdin-pie {
+	float: left;
+	height: 32px;
+	width: 32px;
+	margin-top: 0px;
+	margin-left: 3%;
+}
+.lkdin-pie {
+	margin-left: 20px;
+}
+
+#seccion {
+	width: 60%;
+	padding: 10px;
+	margin: auto;
+}
+}
+
+@media(max-width: 480px) { /*movil movil movil movil movil movil movil movil movil */
+#container {
+	width: 100%;
+	min-width: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#cabecera { /*extension de la cabecera abarcando el ancho total de la pantalla*/
+	padding-bottom: 0px;
+	height: 100px;
+}
+
+#logo-xima {
+	width: 50%;
+	margin-top: 15px;
+	margin-left: 10px;
+}
+.facebook {
+	float: left;
+	height: 32px;
+	width: 32px;
+	margin-top: 10px;
+	margin-left: 15%;
+}
+#menu-superior {
+	margin-left: 40%;
+}
+
+#suplemento-pie {
+	clear: both;
+	float: none;
+	height: 310px;
+	width: 100%;
+}
+#pie {
+	height: 290px;
+	background-color: #890B4D;
+	text-align: left;
+}
+#pie-centrado {
+	width: 100%;
+	height: 290px;
+}
+.direccion {
+	width: 100%;
+	text-align: center;
+	margin: 15px 0;
+}
+.quines-somos, .quines-somos-1 {
+	margin-top: 0;
+	width: 45%;
+	margin-bottom: 10px;
+}
+.quines-somos-1 {
+	margin-left: 0%;
+}
+.facebook-pie, .lkdin-pie {
+	float: left;
+	margin-top: 25px;
+	margin-left: 35%;
+}
+.lkdin-pie {
+	margin-left: 5%;
+}
+#quienes-pie {
+	clear: both;
+	float: none;
+	width: 100%;
+	margin-top: 0px;
+	height: 130px;
+}
+#seccion {
+	width: 80%;
+	background: #FF3;
+}
+
+#seccion h2 {
+	font-size: 15px;
+}
+
+#seccion h3{
+	font-size: 15px;
+	color: #F00;
+}
+
+
+
+}
+
+@media(min-width: 765px) {  /*EJECUTA cuando la pantalla es mayor a 765* y devuelve el pie al fondo de la pantalla*/
+html, body {
+	height: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	background-image: url(img/backgrond-body.jpg);
+	background-repeat: repeat;
+}
+#contenedor {
+	min-height: 100%;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(img/columnas-principal.jpg);
+	background-repeat: repeat-y;
+	background-position: center;
+	position: relative;
+}
+#menu {
+	display: block;
+}
+#menu-centrar {
+	display: block;
+}
+#menu-movil-contenedor {
+	display: none;
+}
+/*#descripcion {
+	border-bottom: #F00 20px solid;
+}*/
+#descripcion ul li {
+	display: none;
+	border-top: #FFF 5px solid;
+}
+ul li {
+	border-top: #FFF 0px solid;
+}
+#descripcion ul li ul li a {
+	display: none;
+}
+.img-mostrar-ocultar {
+	display: none;
+}
+#contenedor-inferior {
+	position: absolute;
+}
+#pie {
+	position: absolute;
+	bottom: -1px;
+}
+}

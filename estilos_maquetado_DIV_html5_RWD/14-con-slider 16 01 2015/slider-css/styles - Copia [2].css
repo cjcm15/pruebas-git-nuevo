@@ -1,0 +1,516 @@
+/** FONTELLO TEXT ICONS
+================================================**/
+
+@font-face {
+  font-family: 'fontello';
+  src: url("fonts/fontello.eot");
+  src: url("fonts/fontello.eot?#iefix") format('embedded-opentype'),
+			 url("fonts/fontello.woff") format('woff'),
+			 url("fonts/fontello.ttf") format('truetype'),
+			 url("fonts/fontello.svg#fontello") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-fontello"]:before,
+[class*=" icon-fontello"]:before {
+  font-family: 'fontello';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  line-height: 1em;
+}
+
+.icon-fontello-down:before { content: '\2193'; } /* '↓' */
+.icon-fontello-resize-full:before { content: '\e744'; } /* '' */
+.icon-fontello-github:before { content: '\f308'; } /* '' */
+.icon-fontello-thumbs-up:before { content: '\2a'; } /* '*' */
+
+/** ICOMOON TEXT ICONS
+================================================**/
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.svg#icomoon') format('svg'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+[class^="icon-icomoon"]:before,
+[class*=" icon-icomoon"]:before {
+	font-family: 'icomoon';
+	font-style: normal;
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-icomoon-tablet:before {content: "\e000";}
+.icon-icomoon-desktop:before {content: "\e002";}
+.icon-icomoon-phone:before {content: "\e001";}
+.icon-icomoon-bx-star:before {content: "\e004";}
+.icon-icomoon-github:before {content: "\e005";}
+.icon-icomoon-beer:before {content: "\e003";}
+.icon-icomoon-double-arrow:before {content: "\e006";}
+
+/** KIEV FONT IMPORT
+================================================**/
+
+@font-face {
+	font-family: 'KievitWeb';
+	src: url('fonts/KievitWeb.eot');
+	src: url('fonts/KievitWeb.eot?#iefix') format('embedded-opentype'),
+			 url('fonts/KievitWeb.woff') format('woff'),
+			 url('fonts/kievitcomp-bold-webfont.svg#KievitComp-BoldRegular') format('svg');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'KievitWeb';
+	src: url('fonts/KievitWeb-Bold.eot');
+	src: url('fonts/KievitWeb-Bold.eot?#iefix') format('embedded-opentype'),
+			 url('fonts/KievitWeb-Bold.woff') format('woff'),
+			 url('fonts/kievitcomp-bold-webfont.svg#KievitComp-BoldRegular') format('svg');
+	font-weight: bold;
+}
+
+/** RESET AND CLEARFIX
+================================================**/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	color: #414141;
+	font-family: "Helvetica", "Arial", sans-serif;
+	background: #f5f5f5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/** TYPOGRAPHY
+================================================**/
+
+a {
+	color: #5280dd;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "KievitWeb", "Arial";
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 3.5em;
+}
+
+h2 {
+	font-size: 2.375em;
+	margin-bottom: 35px;
+}
+
+h3 {
+	font-size: 1.375em;
+	margin-bottom: 10px;
+}
+
+p {
+	font-size: .875em;
+	line-height: 1.35em;
+	color: #555;
+	margin-bottom: 20px;
+}
+
+p.intro {
+	font-size: 1.125em;
+	margin-bottom: 35px;
+}
+
+pre {
+	margin: 15px 0;
+	overflow: auto;
+	word-wrap: normal!important;
+}
+
+code {
+	/*width: 1000px;*/
+}
+
+hr {
+	border: 0;
+	border-top: solid #ddd 1px;
+	margin: 40px 0;
+}
+
+/** LAYOUT
+================================================**/
+
+.inner {
+	max-width: 700px;
+	position: relative;
+	margin: 0 auto;
+	/*background: #3FF;*/
+}
+
+#main {
+	/*padding: 50px 0;*/
+	margin: 0 auto;
+}
+
+#primary {
+	max-width: 700px;
+	height: 200px;
+/*	margin: 0 270px 0 0;*/
+	margin: 0 auto;
+	position: relative;
+	/*background: #FF0;*/
+}
+
+/*aside {
+	width: 230px;
+	float: right;
+}*/
+
+/** HOME
+================================================**/
+
+.home h1 {
+	text-align: center;
+	line-height: 1.25em;
+	font-size: 3.75em;
+}
+
+.home .bx-wrapper {
+	margin: 30px auto 40px;
+}
+
+.home #primary ul {
+	margin: 0 0 40px 16px;
+}
+
+.home #primary li {
+	list-style: disc;
+	margin-bottom: 10px;
+	color: #555;
+	font-size: 1em;
+}
+
+.pictogram {
+/*	margin: 60px 0 90px 20px;*/
+	padding: 20px 0;
+	text-align: center;
+}
+
+.pictogram div {
+	display: inline-block;
+	position: relative;
+}
+
+.pictogram .icon-icomoon-desktop {
+	font-size: 8em;
+}
+
+.pictogram .icon-icomoon-tablet {
+	font-size: 6em;
+	top: -15px;
+}
+
+.pictogram .icon-icomoon-phone {
+	font-size: 4em;
+	top: -30px;
+}
+
+.pictogram .icon-fontello-thumbs-up {
+	font-size: 7em;
+	top: -30px;
+}
+
+.pictogram .operator {
+	color: #c5c5c5;
+	margin: 0 20px;
+	top: -45px;
+	font-size: 3.5em;
+	font-weight: bold;
+}
+
+.step {
+	margin-bottom: 45px;
+}
+
+.home p.pop {
+	color: #de3329;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 6px 0 80px;
+	font-family: "KievitWeb", "Arial";
+}
+
+/** EXAMPLES
+================================================**/
+
+.example-item h1 {
+	font-size: 2.5em;
+	margin-bottom: 30px;
+}
+
+.code-switch {
+	margin-top: 20px;
+	height: 25px;
+}
+
+.code-switch a {
+	display: block;
+	width: 70px;
+	color: #fff;
+	text-align: center;
+	float: left;
+	background: #989898;
+	padding: 5px 0;
+	font-family: "Consolas", "Monaco", "Courier", serif;
+	font-size: .875em;
+}
+
+.code-switch a.active {
+	background: #5280dd;
+}
+
+.code-switch .js {
+	-moz-border-radius: 5px 0 0 5px;
+	-webkit-border-radius: 5px 0 0 5px;
+	border-radius: 5px 0 0 5px;
+}
+
+.code-switch .html {
+	-moz-border-radius: 0 5px 5px 0;
+	-webkit-border-radius: 0 5px 5px 0;
+	border-radius: 0 5px 5px 0;
+}
+
+.code-wrap .code {
+	display: none;
+}
+
+.code-wrap .code.active {
+	display: block;
+}
+
+.example-item .examples-list {
+	margin-top: 60px;
+}
+
+.examples-list ol {
+	margin-left: 30px;
+}
+
+.examples-list ol li {
+	list-style: decimal;
+	color: #666;
+	margin-bottom: 8px;
+}
+
+.example-item ol li {
+	font-size: .875em;
+}
+
+.example-item .slider a {
+	line-height: 1.5em;
+}
+
+.example-item #bx-pager {
+	text-align: center;
+	margin-top: -30px;
+}
+
+.example-item #bx-pager a {
+	margin: 0 3px;
+}
+
+.example-item #bx-pager a img {
+	padding: 3px;
+	border: solid #ccc 1px;
+}
+
+.example-item #bx-pager a:hover img,
+.example-item #bx-pager a.active img {
+	border: solid #5280DD 1px;
+}
+
+/** CAROUSEL DEMYSTIFIED
+================================================**/
+
+.carousel-demystified aside { display: none; }
+.carousel-demystified #primary { margin: 0;}
+
+.carousel-demystified h2 {
+	font-size: 1.75em;
+	margin-bottom: 30px;
+}
+
+.carousel-demystified ol li {
+	list-style: decimal;
+	margin: 0 0 5px 50px;
+	line-height: 1.35em;
+	color: #555;
+}
+
+
+/** RESPONSIVE BREAKPOINTS
+================================================**/
+
+
+@media(max-width: 765px){
+	.inner {
+	max-width: 700px;
+	width: 98%;
+}
+
+#main {
+	/*padding: 50px 0;*/
+	margin: 0 auto;
+}
+
+#primary {
+	max-width: 700px;
+	width: 98%;
+	margin: 0 auto;
+	position: relative;
+	background: #0FC;
+}
+
+	#primary {
+		margin: 0 0 750px 0;
+		margin: 0 auto;
+	}
+
+	aside {
+		float: none;
+		position: absolute;
+		bottom: 0;
+		width: 70%;
+		padding: 0 20px;
+	}
+
+	header .logo {
+		margin: 0 auto;
+		float: none;
+		text-align: center;
+		padding: 10px 0;
+	}
+
+	header nav {
+		position: static;
+		text-align: center;
+	}
+
+	header .download {
+		position: static;
+		text-align: center;
+		margin: 25px 0;
+	}
+
+	.home h1 {
+		font-size: 2.25em;
+	}
+
+	#main {
+		padding-top: 20px;
+	}
+
+}
+
+@media(max-width: 480px){
+	.inner {
+	max-width: 700px;
+	width: 98%;
+}
+
+#main {
+	/*padding: 50px 0;*/
+	margin: 0 auto;
+}
+
+#primary {
+	max-width: 700px;
+	width: 98%;
+	margin: 0 auto;
+	position: relative;
+	background: #FF0;
+}
+
+}
+
+
+
+/*body .one .bsa_it_ad { background: transparent; border: none; font-family: inherit; padding: 0 15px 0 10px; margin: 0; text-align: right; }*/
+body .one .bsa_it_ad:hover img { -moz-box-shadow: 0 0 3px #000; -webkit-box-shadow: 0 0 3px #000; box-shadow: 0 0 3px #000; }
+body .one .bsa_it_ad .bsa_it_i { display: block; padding: 0; float: none; margin: 0 0 5px; }
+body .one .bsa_it_ad .bsa_it_i img { padding: 0; border: none; }
+body .one .bsa_it_ad .bsa_it_t { padding: 6px 0; }
+body .one .bsa_it_ad .bsa_it_d { padding: 0; font-size: 12px; color: #333; }
+body .one .bsa_it_p { display: none; }
+body #bsap_aplink, body #bsap_aplink:hover { display: block; font-size: 10px; margin: 12px 15px 0; text-align: right; }
